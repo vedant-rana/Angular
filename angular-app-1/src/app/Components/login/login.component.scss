@@ -1,0 +1,82 @@
+/* Container Styles */
+.container {
+    max-width: 400px; /* Adjust based on your preference */
+    margin: 20vh auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Form Heading */
+.container h2 {
+    text-align: center;
+    color: #333; /* Dark grey color */
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.container input[type="email"]::placeholder,
+.container input[type="password"]::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+/* Validation Message */
+.red-text {
+    color: #d32f2f; /* Red color for error messages */
+    font-size: 0.9em;
+    margin: -5px 0 10px 0; /* Adjust spacing */
+}
+
+/* Button Styles */
+.btn-green,
+.btn-red {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px; /* Space between buttons */
+    width: calc(50% - 10px); /* Adjust based on margin to fit container width */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.btn-green {
+    background-color: #4caf50; /* Green background */
+    color: white;
+}
+
+.btn-red {
+    background-color: #f44336; /* Red background */
+    color: white;
+}
+
+/* Hover Effects for Buttons */
+.btn-green:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.btn-red:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Ensure buttons and inputs do not focus outline beyond border radius */
+.container input[type="email"]:focus,
+.container input[type="password"]:focus,
+.btn-green:focus,
+.btn-red:focus {
+    outline: none;
+    border-color: #719ECE; /* Blue border for focus state */
+}

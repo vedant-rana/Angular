@@ -1,0 +1,11 @@
+<!-- this form is made by rective forms module  -->
+
+<form class="container" [formGroup]="loginForm">
+    <h2>Login</h2>
+    <input type="email" placeholder="Enter Email" [formControl]="email">
+    <p class="red-text" [hidden] = "email.valid || email.untouched">Enter Valid Email</p>
+    <input type="password" placeholder="Enter password" [formControl]="password">
+    <p class="red-text" [hidden] = "password.valid || password.untouched">Password should have more than 6 characters</p>
+    <button class="btn-green" [disabled]="loginForm.invalid" (click)="login()">Login</button>
+    <button class="btn-red" (click)="reset()">Reset</button>
+</form>

@@ -1,0 +1,15 @@
+<div>
+    <nav>
+        <h2><a routerLink="">Logo</a></h2>
+    </nav>
+    <ul>
+        <li><a routerLink="/code" routerLinkActive="active">Create Code</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About us</a></li>
+        @if(auth.isAuthenticated()){
+            <li (click)="logOutUser()">logout</li>
+        }@else{
+            <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+            <li><a routerLink="/signup" routerLinkActive="active">Sign up</a></li>
+        }
+    </ul>
+</div>

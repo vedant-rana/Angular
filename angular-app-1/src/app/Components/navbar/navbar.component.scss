@@ -1,0 +1,40 @@
+/* Styles for the overall container */
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Styles for the navigation bar */
+nav h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul li a:hover, ul li a.active {
+    background-color: #555; /* Slightly lighter shade for hover/active */
+}
+
+/* Additional responsiveness or styling adjustments can be added as needed */

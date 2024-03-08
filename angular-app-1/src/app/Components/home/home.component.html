@@ -1,0 +1,7 @@
+<div class="code-list">
+    @for(item of allSnippets; track item.id){
+    <div class="code-item">
+       <h3><a [routerLink]="['/snippet', item.id]">{{item.title}}</a></h3>
+    </div>
+    }
+</div>

@@ -1,0 +1,12 @@
+<!-- this form is made by rective forms module  -->
+
+<form class="container" #registrationForm = "ngForm">
+    <h2>Sign up</h2>
+    <input type="email" name="email" placeholder="Enter Email" required ngModel #email="ngModel">
+
+    <p class="red-text"  [hidden] = "email.valid || email.untouched">Enter Valid Email</p>
+    <input type="password" name="password" placeholder="Enter password" required minlength="6" ngModel #password="ngModel">
+    <p class="red-text" [hidden] = "password.valid || password.untouched">Password should have more than 6 characters</p>
+    <button class="btn-green" [disabled]="registrationForm.invalid" (click)="signup(registrationForm)">Login</button>
+    <button class="btn-red" (click)="reset(registrationForm)">Reset</button>
+</form>

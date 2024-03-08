@@ -1,0 +1,37 @@
+<!-- <p>Enter the name and see the console</p>
+<input type="text" [value]="inputVal" (input)="handleChange($event)">
+
+<br>
+<h3>your value = {{inputVal}}</h3>
+<br>
+<br/>
+
+<input type="text" [(ngModel)]="val2">
+<br/>
+<p>value 2 : {{val2}}</p>
+
+<br>
+<br>
+<div class="loop-div">
+    @for (user of users; track user.name) {
+        <div>
+            <h2>name : {{user.name}}</h2>
+            <p>Single Status : {{user.isSingle}}</p>
+            <h4>salary : {{user.salary}}</h4>
+        </div>
+    }
+</div>
+
+<div class="direvtive" *ngFor="let user of users">
+    <div>
+        <h2>name : {{user.name}}</h2>
+        <p>Single Status : {{user.isSingle}}</p>
+        <h4>salary : {{user.salary}}</h4>
+    </div>
+</div> -->
+@for(u of users; track u.name){
+
+    <hinv-cmp-2 (sendToParent)="recievedata($event)" [user]="u"></hinv-cmp-2>
+}
+
+<p>{{childData.name | uppercase}} && {{childData.salary}}</p>

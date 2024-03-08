@@ -1,0 +1,11 @@
+<!-- this form is made by rective forms module  -->
+
+<form class="container" [formGroup]="codesForm">
+    <h2>create code</h2>
+    <input type="text" placeholder="Enter Title" [formControl]="title">
+    <p class="red-text" [hidden] = "title.valid || title.untouched">Enter Title</p>
+    <textarea placeholder="Enter Code here" [formControl]="code"></textarea>
+    <p class="red-text" [hidden] = "code.valid || code.untouched">Please Enter code</p>
+    <button class="btn-green" [disabled]="codesForm.invalid" (click)="create()">Create</button>
+    <button class="btn-red" (click)="reset()">Reset</button>
+</form>

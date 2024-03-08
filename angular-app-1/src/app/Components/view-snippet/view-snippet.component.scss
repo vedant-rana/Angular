@@ -1,0 +1,27 @@
+.code-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.code-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.code-card pre {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.code-card p {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+}

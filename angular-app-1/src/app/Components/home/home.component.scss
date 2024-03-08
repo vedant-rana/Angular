@@ -1,0 +1,38 @@
+.code-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .code-item {
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .code-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .code-item h3 a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .code-item h3 a:hover {
+    text-decoration: underline;
+  }
+  
